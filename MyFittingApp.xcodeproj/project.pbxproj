@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D714F8A321BA314300B7BEE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8A221BA314300B7BEE1 /* AppDelegate.swift */; };
-		D714F8A521BA314300B7BEE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8A421BA314300B7BEE1 /* ViewController.swift */; };
 		D714F8A821BA314300B7BEE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714F8A621BA314300B7BEE1 /* Main.storyboard */; };
 		D714F8AA21BA314300B7BEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D714F8A921BA314300B7BEE1 /* Assets.xcassets */; };
 		D714F8AD21BA314300B7BEE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714F8AB21BA314300B7BEE1 /* LaunchScreen.storyboard */; };
+		D714F8B921BAB2A400B7BEE1 /* FittingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8B821BAB2A400B7BEE1 /* FittingRoomViewController.swift */; };
+		D714F8BB21BAB2B800B7BEE1 /* LengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8BA21BAB2B800B7BEE1 /* LengthViewController.swift */; };
+		D714F8BF21BAB57500B7BEE1 /* CreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8BE21BAB57500B7BEE1 /* CreatorViewController.swift */; };
+		D714F8E121BCEE0400B7BEE1 /* CalculationLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714F8E021BCEE0400B7BEE1 /* CalculationLength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D714F89F21BA314300B7BEE1 /* MyFittingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFittingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D714F8A221BA314300B7BEE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D714F8A421BA314300B7BEE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D714F8A721BA314300B7BEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D714F8A921BA314300B7BEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D714F8AC21BA314300B7BEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D714F8AE21BA314300B7BEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D714F8B821BAB2A400B7BEE1 /* FittingRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingRoomViewController.swift; sourceTree = "<group>"; };
+		D714F8BA21BAB2B800B7BEE1 /* LengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthViewController.swift; sourceTree = "<group>"; };
+		D714F8BE21BAB57500B7BEE1 /* CreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorViewController.swift; sourceTree = "<group>"; };
+		D714F8E021BCEE0400B7BEE1 /* CalculationLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationLength.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		D714F8A121BA314300B7BEE1 /* MyFittingApp */ = {
 			isa = PBXGroup;
 			children = (
-				D714F8A221BA314300B7BEE1 /* AppDelegate.swift */,
-				D714F8A421BA314300B7BEE1 /* ViewController.swift */,
-				D714F8A621BA314300B7BEE1 /* Main.storyboard */,
-				D714F8A921BA314300B7BEE1 /* Assets.xcassets */,
-				D714F8AB21BA314300B7BEE1 /* LaunchScreen.storyboard */,
+				D714F8B721BAB27800B7BEE1 /* Model */,
+				D714F8B621BAB24B00B7BEE1 /* View */,
+				D714F8B421BAB21F00B7BEE1 /* Controller */,
+				D714F8B521BAB22A00B7BEE1 /* App */,
 				D714F8AE21BA314300B7BEE1 /* Info.plist */,
 			);
 			path = MyFittingApp;
+			sourceTree = "<group>";
+		};
+		D714F8B421BAB21F00B7BEE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D714F8B821BAB2A400B7BEE1 /* FittingRoomViewController.swift */,
+				D714F8BA21BAB2B800B7BEE1 /* LengthViewController.swift */,
+				D714F8BE21BAB57500B7BEE1 /* CreatorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D714F8B521BAB22A00B7BEE1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D714F8A221BA314300B7BEE1 /* AppDelegate.swift */,
+				D714F8A921BA314300B7BEE1 /* Assets.xcassets */,
+				D714F8AB21BA314300B7BEE1 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D714F8B621BAB24B00B7BEE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D714F8A621BA314300B7BEE1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D714F8B721BAB27800B7BEE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D714F8E021BCEE0400B7BEE1 /* CalculationLength.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D714F8A521BA314300B7BEE1 /* ViewController.swift in Sources */,
+				D714F8BF21BAB57500B7BEE1 /* CreatorViewController.swift in Sources */,
+				D714F8BB21BAB2B800B7BEE1 /* LengthViewController.swift in Sources */,
+				D714F8E121BCEE0400B7BEE1 /* CalculationLength.swift in Sources */,
+				D714F8B921BAB2A400B7BEE1 /* FittingRoomViewController.swift in Sources */,
 				D714F8A321BA314300B7BEE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,15 +323,18 @@
 		D714F8B221BA314300B7BEE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyFittingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = subeen.MyFittingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cse.mo.u201602066;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,15 +343,18 @@
 		D714F8B321BA314300B7BEE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyFittingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = subeen.MyFittingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cse.mo.u201602066;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
